@@ -15,7 +15,6 @@ import (
 var i = flag.Int("i", 2, "group that represents variable name")
 var g = flag.String("d", "*.conf", "gob pattern for selecting files to modify")
 var p = flag.String("p", "", "prefix for env variables")
-var f = flag.String("f", "", "file to open")
 var e = flag.String("e", `^(\s*)set\s*\$(\w*)\s*("(.*?)")?\s*;\s*$`, "regular expression to search for")
 var r = flag.String("r", `${1}set $$$2 "%s";`, "replacement template (use %s where you want value)")
 
